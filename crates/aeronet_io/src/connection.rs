@@ -75,7 +75,7 @@ impl Disconnect {
 ///
 /// This may also be used by code above the IO layer for e.g. signaling
 /// transport errors, however this is not guaranteed.
-#[derive(Debug, Event)]
+#[derive(Debug, Event, EntityEvent)]
 pub enum Disconnected {
     /// Session was disconnected by the user on our side, with a provided
     /// reason.
