@@ -140,7 +140,7 @@ impl Close {
 /// This must be triggered by the IO layer when it detects a fatal server error.
 /// If the error only concerns a single client, that client must be disconnected
 /// instead of closing the entire server.
-#[derive(Debug, Event)]
+#[derive(Debug, Event, EntityEvent)]
 pub enum Closed {
     /// Server was closed by the user on our side, with a provided reason.
     ///
