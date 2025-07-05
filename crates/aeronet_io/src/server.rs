@@ -110,7 +110,7 @@ impl Server {
 /// ```
 ///
 /// [`Disconnect`]: crate::connection::Disconnect
-#[derive(Debug, Clone, PartialEq, Eq, Event)]
+#[derive(Debug, Clone, PartialEq, Eq, Event, EntityEvent)]
 pub struct Close {
     /// User-provided closing reason.
     ///
