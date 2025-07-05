@@ -46,7 +46,7 @@ impl Plugin for ConnectionPlugin {
 /// );
 /// # }
 /// ```
-#[derive(Debug, Clone, PartialEq, Eq, Event)]
+#[derive(Debug, Clone, PartialEq, Eq, Event, EntityEvent)]
 pub struct Disconnect {
     /// User-provided disconnection reason.
     ///
